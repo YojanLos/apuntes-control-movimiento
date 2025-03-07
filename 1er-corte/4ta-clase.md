@@ -105,6 +105,14 @@ Para garantizar un funcionamiento preciso, los servomecanismos emplean sensores 
 
 ---
 
+## Conclusiones
+
+- Los servomotores permiten ajustar con alta precisión variables como la posición, la velocidad y el torque. Esto es esencial para aplicaciones que requieren movimientos exactos y repetitivos, como en robótica, automatización industrial y sistemas de control.
+
+- Existen diferentes tipos de motores (DC, AC síncronos y AC asíncronos) que ofrecen soluciones adaptadas a necesidades específicas. Cada tecnología presenta ventajas y desventajas en términos de eficiencia, mantenimiento, costo y capacidad de manejo de cargas, lo que permite seleccionar la opción más adecuada para cada aplicación.
+
+---
+
 ### **Servomotores en Aerogeneradores**
 En los aerogeneradores modernos, los servomotores son esenciales para optimizar la eficiencia en la generación de energía. Se utilizan para ajustar la orientación de las palas (control de paso) y la dirección de la góndola (control de guiñada), permitiendo que las turbinas se alineen correctamente con el viento y mantengan una velocidad de rotación adecuada. Este ajuste preciso maximiza la captación de energía y protege la estructura de condiciones adversas.
 

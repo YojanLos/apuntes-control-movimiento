@@ -48,6 +48,13 @@ El control en cascada es una estrategia de control en la que se utilizan múltip
 - Se ajusta usando parámetros identificados en la oscilación inducida.
 
 ---
+## Conclusiones
+
+1. El control en cascada permite un mejor rechazo a perturbaciones y una respuesta más rápida en comparación con un solo lazo de control, lo que mejora la estabilidad y precisión del proceso.  
+2. Para implementar un sistema de control en cascada, es necesario medir más de una variable del proceso, lo que puede aumentar la complejidad del sistema. 
+3. Es fundamental que el lazo interno sea más rápido que el externo. Generalmente, el lazo interno usa un controlador PI o P para evitar retardos de la acción derivativa, mientras que el lazo externo puede utilizar un PI o PID según las necesidades del proceso.   
+
+---
 
 ### Ejemplo: Control de Dosis de Cloro en un Tanque de Contacto
 

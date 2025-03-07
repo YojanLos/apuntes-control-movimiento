@@ -62,6 +62,10 @@ El control en cascada permite ajustar distintas variables de manera más eficien
 - **Ensamble electrónico:** Montaje de circuitos impresos
 
 ---
+## Conclusiones
+
+Anteriormente, los sistemas mecánicos rígidos dependían de engranajes y ejes largos, pero hoy en día, los controladores electrónicos y sensores han permitido mayor adaptabilidad y automatización.
+---
 
 ## Ejemplo 1: Monitoreo y optimización de grúas portuarias
 Un sistema de control de movimiento se implementó en las grúas portuarias del puerto de Escombreras para mejorar la eficiencia y seguridad. Se emplean sensores para medir variables como la velocidad del viento, cargas transportadas y temperatura. Con esta información, el sistema ajusta la posición y velocidad de la grúa en tiempo real, reduciendo oscilaciones peligrosas y optimizando los tiempos de carga y descarga.
