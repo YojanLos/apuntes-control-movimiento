@@ -1,96 +1,116 @@
 # Servomotores
 
-Servo -> Esclavo
-Servomecanismo -> Control de movimiento 
+El término **servo** proviene del latín *servus*, que significa esclavo. Un **servomecanismo** es un sistema de control de movimiento que ajusta automáticamente una variable a un valor deseado o sigue un objetivo en el tiempo. Estos sistemas responden a:
 
-Posición, velocidad, torque (responde a)
+- **Posición**
+- **Velocidad**
+- **Torque**
 
-## Variable a Controlar
-* Posición
-* Velocidad
-* Torque
+## Variables a Controlar
+Las principales variables que regulan los servomecanismos son:
+- **Posición**: Control de orientación o desplazamiento angular/lineal.
+- **Velocidad**: Regulación del ritmo de movimiento.
+- **Torque**: Ajuste de la fuerza de giro aplicada.
 
-Controlador -> Sistema Cascada
-Driver de potencia -> Señal PWM
-Servomotores -> Actuador
+### Componentes del Servomecanismo
+Un servomecanismo está compuesto por:
+- **Controlador**: Implementa un sistema en cascada para gestionar la respuesta.
+- **Driver de potencia**: Modula la señal PWM para excitar el motor.
+- **Servomotor**: Actuador que convierte la señal eléctrica en movimiento mecánico.
 
-## Motores
+---
 
-* DC
-* AC Inducción
-* AC Sincronos
+## Tipos de Motores
+Los motores utilizados en servomecanismos pueden clasificarse en:
 
-## Corriente Continua (DC)
-Estator         rotor
-Parte fija      Parte Móvil 
-Rotor -> embobinado -> corriente y campo magnetico
+- **Motores de Corriente Continua (DC)**
+- **Motores de Corriente Alterna (AC)**
+  - **Motores de Inducción**
+  - **Motores Síncronos**
+
+---
+
+## Motores de Corriente Continua (DC)
+### Partes Principales
+- **Estator**: Parte fija que contiene el devanado inductor, encargado de generar el campo magnético de excitación.
+- **Rotor**: Parte móvil con un embobinado en el que circula corriente para inducir un campo magnético.
+- **Colector de delgas**: Laminas de cobre conectadas al devanado inducido, permitiendo la conmutación de corriente.
 
 ### Aplicaciones
-* Motor DC -> Elementos Pequeños por el gran costo de potencia
-* En motores antiguos los cables de potencia eran gigantes.
+Los motores DC son ideales para aplicaciones donde se requiere un control preciso de velocidad y torque. Ejemplos:
+- **Cintas transportadoras** (350kW)
+- **Molienda de caña de azúcar** (746kW)
 
-## Motor AC Sincrono
-* Sistema de varios embobinados, en el rotor
-* En el estatro se usa embobinados o imanes
-* Modo de funcionamiento por imanes, se busca invertir la polaridad de estos y usando como alimentación señal trifasia.
-* Carros electricos usan este tipo de motores
-* Al no haber roce el desgaste es menor junto con las escobillas.
-* Para generar torques altos se requieren embobinados pequeños.
+---
 
-## Motor AC Asincrono (descarga)
-* Tanto rotor como estator tienen embobinados.
-* Menos eficiente y mas costoso que los sincronos.
-* Mas conocidos como motor de jaula de ardilla.
-* Según la forma del embobinado puede cambiar el valor de torque que puede generar.
+## Motores de Corriente Alterna (AC)
+### **Motores Síncronos**
+Los motores síncronos giran a una velocidad fija determinada por la frecuencia de la red de alimentación. 
 
-## Ventajas y desventajas
+#### Características:
+- Utilizan un bobinado trifásico en el **estator** para generar un campo magnético giratorio.
+- El **rotor** puede ser de imanes permanentes o bobinas excitadas con corriente continua.
+- Funcionan con alimentación trifásica.
+- No presentan desgaste por roce debido a la ausencia de escobillas.
 
-### Motor DC 
-#### Ventajas
-* Solo PWM
-* Driver de potencia simple
-* Precio bajo (Proyectos pequeños)
+#### Aplicaciones:
+- **Bombas industriales** (2500 HP, 6600V)
+- **Laminación siderúrgica** (3000 kW)
 
-#### Desventajas
-* Mantenimiento Permanente
-* En entornos higienicos no es recomendado
+### **Motores Asíncronos** (Inducción)
+En los motores asíncronos, el rotor gira a una velocidad menor que el campo magnético del estator debido al fenómeno del **deslizamiento**.
 
-### Motor de Inducción 
-#### Ventajas
-* Robustos (Pares de embobinados)
-* Altas velocidades y torques
+#### Características:
+- El estator genera un campo magnético giratorio.
+- El rotor induce corriente debido a la variación de flujo magnético.
+- Existen dos tipos:
+  - **Jaula de ardilla** (rotor simple y eficiente)
+  - **Rotor bobinado** (mayor control de velocidad y torque)
 
-#### Desventajas
-* Motores grandes
-* Fuerza miníma 1 caballo de fuerza
-* Control mas complicado que un motor DC
-* Temperaturas y condiciones de humedad pueden oxidar el embobinado
+#### Aplicaciones:
+- **Bombas** (1267 HP)
+- **Sopladores de aire** (630 kW)
+- **Cintas transportadoras** (2788 HP)
+- **Extractores de aire** (900 kW)
 
-### Motor Sincrono
-#### Ventajas
-* Poco mantenimiento 
-* Ligero
-* Alta eficiencia
+---
 
-#### Desventajas
-* Dificultad intermedia
-* Necesidad de driver de potencia con respuesta 1:1
-* Los imanes se pueden desmagnetizar
+## Comparación de Motores
 
-wr -> Velocidad Nominal
+| Tipo de Motor | Ventajas | Desventajas |
+|--------------|----------|-------------|
+| **DC** | Control sencillo, Driver de potencia simple, Bajo costo en aplicaciones pequeñas | Mantenimiento constante, No apto para entornos limpios, No soporta altos torques |
+| **Inducción (AC)** | Robustos, Alta velocidad y torque, Eficiencia en grandes aplicaciones | Control más complejo, Puede oxidarse con la humedad |
+| **Síncrono (AC)** | Poco mantenimiento, Ligero y compacto, Alta eficiencia | Requiere driver de potencia con sincronización 1:1, Imanes pueden desmagnetizarse |
 
-## Sensores
-* Posición y velocidad (encoder)
-* Corrente (Torque)
+---
 
-### Encoder
-* Absoluto
-* Incremental
+## Sensores en Servomecanismos
+Para garantizar un funcionamiento preciso, los servomecanismos emplean sensores que miden:
+- **Posición y velocidad** -> **Encoders**
+- **Corriente (Torque)** -> **Sensores de efecto Hall o shunt**
 
-Nota: Todos los encoder incrementales pueden volverse absoluto por software.
+### **Encoders**
+- **Encoders Absolutos**: Proporcionan un código único de posición para cada giro completo.
+- **Encoders Incrementales**: Generan pulsos proporcionales al movimiento angular.
 
-### Resolver
-* Mantenimiento
-* Posible error en medición por razones mecánicas 
+**Nota:** Los encoders incrementales pueden convertirse en absolutos mediante software.
 
-    Nota: Efecto hall es cuando a un campo magnetico se le acercan ciertos elementos los cuales inducen una corriente y por consiguiente voltaje.
+### **Resolver**
+- Sensor analógico de posición angular.
+- Funciona como un transformador con dos embobinados.
+- Disponible con y sin escobillas.
+- Voltajes de operación entre **2V RMS y 40V RMS**.
+- Frecuencias entre **50 Hz y 20 kHz**.
+
+---
+
+### **Servomotores en Aerogeneradores**
+En los aerogeneradores modernos, los servomotores son esenciales para optimizar la eficiencia en la generación de energía. Se utilizan para ajustar la orientación de las palas (control de paso) y la dirección de la góndola (control de guiñada), permitiendo que las turbinas se alineen correctamente con el viento y mantengan una velocidad de rotación adecuada. Este ajuste preciso maximiza la captación de energía y protege la estructura de condiciones adversas.
+
+[**Referencia**](https://www.generaldrivermotor.com/motores/gdm-en-permanente-evolucion-en-permanente-adaptacion/)
+
+### **Servomotores en Telescopios Robóticos**
+Los telescopios robóticos utilizan servomotores para automatizar el seguimiento de objetos celestes, permitiendo observaciones precisas sin intervención humana constante. Estos sistemas ajustan la orientación del telescopio en tiempo real, compensando la rotación terrestre y otros factores, lo que es esencial para la investigación astronómica y la vigilancia espacial.
+
+[**Referencia**](https://es.wikipedia.org/wiki/Telescopio_rob%C3%B3tico)
