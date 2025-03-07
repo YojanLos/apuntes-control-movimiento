@@ -1,50 +1,55 @@
-# Control Cascada
+# Control en Cascada
 
-## ¿Qué es el Control Cascada?
+## ¿Qué es el Control en Cascada?
 
-- El control cascada busca rechazar todas las perturbaciones que pueda tener la variable de proceso.
-- Se utiliza en casos donde un solo lazo de control no es suficiente.
-- El lazo interno siempre es la variable más rápida. Se recomienda usar un control PI, ya que el PID no es una opción debido a que la acción derivativa vuelve lenta la respuesta.
-- El lazo externo puede usar un PI o PID, dependiendo de lo que se desee hacer con la carga.
-- Para implementar un control cascada, es necesario medir más variables además de la variable a controlar.
-- Este tipo de control se usa cuando las perturbaciones afectan directamente la salida.
+El control en cascada es una estrategia de control en la que se utilizan múltiples lazos de control anidados para mejorar el rechazo a perturbaciones y la estabilidad del sistema. 
 
+### Características principales:
+- Se usa cuando un solo lazo de control no es suficiente para estabilizar un proceso.
+- El lazo interno controla una variable rápida y generalmente usa un controlador PI para evitar ralentización por acción derivativa.
+- El lazo externo puede utilizar un controlador PI o PID, según la necesidad del sistema.
+- Requiere la medición de más de una variable del proceso.
+- Se usa en sistemas donde las perturbaciones afectan la salida.
+
+---
 ## Métodos de Sintonización
 
-- **Empíricos (Lazo Abierto)**
-- **Lazo Cerrado**
-- **Modelo Riguroso**
-- **Inteligencia Computacional**
+### Metodologías disponibles:
+- **Empíricas en lazo abierto**
+- **Empíricas en lazo cerrado**
+- **Basadas en modelos rigurosos**
+- **Basadas en inteligencia computacional**
 
-### Lazo Abierto
+### Sintonización en Lazo Abierto
 
-- Se realiza el modelamiento de todas las variables, tanto la principal como las variables de perturbaciones.
-- El lazo secundario (interno) trabaja de manera completamente independiente.
-- El lazo interno se comporta como un único bloque en el diagrama de bloques.
-- Cuando se elimina el error de estado estacionario, la relación de salida/entrada es igual a 1.
-- El retardo del primer lazo se suma con el segundo lazo para hallar el tiempo muerto del sistema.
-- El Tau resultante es el Tau del sistema más lento.
+- Se realiza modelado de las variables principales y perturbaciones.
+- El lazo interno trabaja de manera independiente y se comporta como un único bloque.
+- El error en estado estacionario se elimina cuando la relación salida/entrada es 1.
+- El retardo total del sistema se obtiene sumando los retardos individuales de los lazos.
 
-#### Método de Austin
+#### Método de Austin (1986)
+- Primero se sintoniza el lazo más rápido.
+- Usa métodos convencionales de sintonización de PI y PID.
+- Se determinan ecuaciones según el tipo de controlador deseado.
+- Se obtiene la función de transferencia a partir de curvas de reacción.
+- Durante la estabilización, el sistema opera por debajo del setpoint.
 
-- El primer lazo a sintonizar es el más rápido.
-- Utiliza esquemas conocidos de sintonización de PID, por lo que solo se obtienen controles PI o PID.
-- En la tabla de ecuaciones, se identifica qué tipo de control se desea (PI o PID) y se toman las ecuaciones correspondientes.
-- Se grafican las señales y, usando métodos de identificación de curva de reacción, se obtienen las funciones de transferencia.
-- Una característica del control cascada es que suele trabajar por debajo del setpoint hasta que se estabiliza.
+### Sintonización en Lazo Cerrado
 
-### Lazo Cerrado
+#### Método de Relé
+- Se usan el **período último** y la **ganancia última**.
+- Se genera una oscilación con una señal cuadrada en el lazo secundario.
+- Se miden el período de oscilación y la ganancia obtenida.
+- Se ajusta el controlador secundario primero, luego el primario.
 
-#### Método de Rele
-
-- Las variables utilizadas son el periodo último y la ganancia última.
-- Se sintoniza el lazo secundario mediante un relé, el cual genera una señal cuadrada haciendo oscilar el sistema en rangos seguros (por ejemplo, entre 25% y 75%).
-- En la gráfica, se mide el periodo (periodo último) y la ganancia de la señal (ganancia última).
-- Epsilon es la amplitud que puede tener el relé.
+#### Método de Hang (1994)
+- Usa pruebas en lazo cerrado con relé para sintonizar el sistema en cascada.
+- Primero se sintoniza el lazo secundario y luego el primario.
+- Se ajusta usando parámetros identificados en la oscilación inducida.
 
 ---
 
-### Ejemplo 7: Control de Dosis de Cloro en un Tanque de Contacto
+### Ejemplo: Control de Dosis de Cloro en un Tanque de Contacto
 
 En un sistema de tratamiento de agua, el control de la dosis de cloro es esencial para garantizar la desinfección adecuada del agua. Un control cascada puede ser implementado de la siguiente manera:
 
@@ -53,9 +58,9 @@ En un sistema de tratamiento de agua, el control de la dosis de cloro es esencia
 
 El lazo primario varía el punto de ajuste del lazo secundario, que a su vez ajusta la dosis de cloro para mantener los niveles deseados tanto en la entrada como en la salida del tanque de contacto. Este método es particularmente útil en procesos con tiempos de bucle largos, como en el tratamiento de agua, donde se pueden esperar tiempos superiores a 30 minutos.
 
-[**Referencia**](https://www.sciencedirect.com/topics/engineering/cascade-control)  
+[**Referencia**](https://www.sciencedirect.com/topics/engineering/cascade-control)
 
-### Ejemplo 9: Control en Cascada de un Motor de Corriente Directa (DC)
+### Ejemplo: Control en Cascada de un Motor de Corriente Directa (DC)
 
 En el control de posición de un motor de corriente directa (DC) con carga, se utiliza un sistema de control en cascada con tres lazos de control:
 
@@ -65,5 +70,4 @@ En el control de posición de un motor de corriente directa (DC) con carga, se u
 
 Este sistema es típico en la industria para el accionamiento de máquinas modernas, donde se requiere un control preciso de corriente, velocidad y posición. Aunque en sistemas comerciales el controlador interno de corriente suele ser inaccesible para el usuario, es posible configurar los controladores de velocidad y posición a través de un computador.
 
-#### Referencias:
-- [**Referencia**](https://controlautomaticoeducacion.com/control-realimentado/control-en-cascada/)  
+[**Referencia**](https://controlautomaticoeducacion.com/control-realimentado/control-en-cascada/)
