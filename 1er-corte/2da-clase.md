@@ -66,9 +66,9 @@ El control en cascada permite ajustar distintas variables de manera más eficien
 ## Ejemplo 1: Monitoreo y optimización de grúas portuarias
 Un sistema de control de movimiento se implementó en las grúas portuarias del puerto de Escombreras para mejorar la eficiencia y seguridad. Se emplean sensores para medir variables como la velocidad del viento, cargas transportadas y temperatura. Con esta información, el sistema ajusta la posición y velocidad de la grúa en tiempo real, reduciendo oscilaciones peligrosas y optimizando los tiempos de carga y descarga.
 
-**Referencia:** [Fuente](https://cadenaser.com/murcia/2025/01/23/premian-a-una-alumna-de-la-upct-por-su-sistema-de-monitorizacion-de-gruas-del-puerto-radio-cartagena/?utm_source=chatgpt.com)
+[**Referencia**](https://cadenaser.com/murcia/2025/01/23/premian-a-una-alumna-de-la-upct-por-su-sistema-de-monitorizacion-de-gruas-del-puerto-radio-cartagena/?utm_source=chatgpt.com)
 
 ## Ejemplo 2: Robots industriales KUKA
 Los robots industriales de KUKA se utilizan en diferentes industrias para automatizar tareas que requieren alta precisión. En la industria automotriz, por ejemplo, estos robots ensamblan vehículos con precisión milimétrica. Se controlan mediante sistemas avanzados de movimiento que ajustan su posición, velocidad y torque en tiempo real para garantizar eficiencia y seguridad en los procesos de manufactura.
 
-**Referencia:** [KUKA Robots](https://www.kuka.com/)
+[**Referencia**](https://www.kuka.com/)
