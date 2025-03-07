@@ -1,6 +1,4 @@
-# Apuntes de la Clase sobre Simscape
-
-## Introducción a Simscape
+# SimScape
 - **Objetivo:**
   - Simular sistemas mecánicos y de control de movimiento.
   - Complementa lo visto en clases previas (modelamiento de motores, componentes eléctricos y mecánicos).
