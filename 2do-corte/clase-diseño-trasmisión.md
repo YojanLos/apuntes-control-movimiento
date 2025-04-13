@@ -124,7 +124,7 @@ La relación entre las velocidades angulares es **inversa** al radio de las pole
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$J_r = J_{load} * N_{GB}^2  donde NGB  = \frac{r_{carga}}{r_{motor}}$
+$J_r = J_{load} * N_{GB}^2  \quad donde \quad NGB  = \frac{r_{carga}}{r_{motor}}$
 
 ### Transmisión por Cadenas
 
@@ -149,14 +149,14 @@ Está definido por dos parámetros:
 
 #### Relación de transmisión:
 
-$\frac{d\theta}{dx} = 2\pi p y \frac{\.{\theta}}{x} = 2\pi p$
+$\frac{d\theta}{dx} = 2\pi p \quad y \quad \frac{\.{\theta}}{x} = 2\pi p$
 
 Donde $p$ es el paso del tornillo.
 
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$J_r = m * (2\pi p)^2 con p = pitch(revs/m)$
+$J_r = m * (2\pi p)^2 \quad con \quad p = pitch(revs/m)$
 
 También puede incluir la inercia del tornillo mismo si tiene masa significativa.
 
@@ -179,7 +179,7 @@ Donde:
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$J_r = m * r_p^2 donde r_p = radio del piñón$
+$J_r = m * r_p^2 \quad donde \quad r_p = radio \quad del \quad piñón$
 
 ### Banda Trasnportadora
 
@@ -192,7 +192,7 @@ $x = r_b * \theta_b \Longrightarrow \.{x} = r_b * \theta_b * \omega_b$
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$J_r = m * r_b^2  donde  r_b = radio  del  tambor/rodillo$
+$J_r = m * r_b^2  \quad donde \quad  r_b = radio  del  tambor/rodillo$
 
 ### Conclusión
 
