@@ -40,6 +40,24 @@ Para analizar el perfil trapezoidal se utilizan fórmulas integrales que permite
 
  En sistemas donde intervienen varios ejes, es fundamental coordinar sus movimientos. Existen tres estrategias principales: mover un eje a la vez, mover ambos ejes en paralelo ***slew motion***, o ajustar los movimientos para que inicien y terminen simultáneamente ***interpolated motion***. Esta última requiere calcular velocidades específicas para cada eje, en función del tiempo que toma el eje mas lento.
 
+## Ejemplo
+
+Se hizo el calculo un Perfil ***Curva en S*** a partir de los datos obtenidos en un efector final de un yugo escocés, los resultados obtenidos en 5 segundos fueron:
+
+### Ejemplo Curva en S
+![Ejemplo Curva en S](Imagenes/ejemploCurvaS.png)
+
+El movimiento empieza con una aceleración baja, luego acelera más rápido en la parte media, y finalmente desacelera suavemente al llegar a su destino.
+
+La velocidad y la aceleración cambian de forma continua. Por lo que no muestra ningún quiebre o punto abrupto.
+
+Se utilizo:
++ Desplazamiento máximo: ~0.1 m
++ Duración total del movimiento: ~4.8 s
+
+El sistema se desplaza 10 cm en 5 segundos.
+
+
  ## Conclusión 
 
  El diseño y análisis de perfiles de movimiento es una herramienta escencial en el campo del control de movimiento. Permite garantizar trayectorias eficientes, suaves y seguras, tanto para movimientos simpes como complejos y multi-eje. El conocimiento de la cinemámtica es clave para el desarrollo de soluciones efectivas.
