@@ -42,7 +42,7 @@ Los engranajes son fundamentales cuando se requiere precisión y control. Se cla
 
 #### Relación de transmisión
 
-La relacion de transmisión $N_GB$ en un sistema de engranes compara la velociodad del motor con la velocidad de la carga:
+La relacion de transmisión $N_{GB}$ en un sistema de engranes compara la velociodad del motor con la velocidad de la carga:
 
 + **$\omega_m$:** Velocidad angular del motor
 + **$\omega_l$:** Velocidad angular de la carga
@@ -51,11 +51,11 @@ La relacion de transmisión $N_GB$ en un sistema de engranes compara la velociod
 
 Ambos engranes están en contacto, por lo tanto comparten la ***misma velocidad tangencial***:
 
-$V_tangencial = \omega_m * r_m = \omega_l * r_l -> \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m}$
+$V_{tangencial} = \omega_m * r_m = \omega_l * r_l -> \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m}$
 
 También puede expresarse en términos de número de dientes:
 
-$\frac{n_l}{n_m} = \frac{r_l}{r_m} -> N_GB = \frac{n_l}{n_m}$
+$\frac{n_l}{n_m} = \frac{r_l}{r_m} -> N_{GB} = \frac{n_l}{n_m}$
 
 #### Torque
 
@@ -67,7 +67,7 @@ $P = T_m * \omega_m = T_l * \omega_l -> \frac{\omega_m}{\omega_l} = \frac{T_l}{T
 
 La relación de transmision puede expresarse de varias formas equivalentes:
 
-$N_GB = \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m} = \frac{n_l}{n_m} = \frac{T_l}{T_m}$
+$N_{GB} = \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m} = \frac{n_l}{n_m} = \frac{T_l}{T_m}$
 
 #### Ejemplo aplicado a SIM SCAPE
 
@@ -81,7 +81,7 @@ $N_GB = \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m} = \frac{n_l}{n_m} = \frac{T_
 
 La incercia reflejada es la cantidad de inercia que se le suma al motor debido a los componentes mecánicos conectados a él.
 
-$J_r = J_load * N_GB^2 donde NGB = \frac{\omega_m}{\omega_l}$
+$J_r = J_{load} * N_{GB}^2 donde NGB = \frac{\omega_m}{\omega_l}$
 
 ### Transmision Por Polea-Correas
 
@@ -97,20 +97,20 @@ Se pueden encontrar diferentes tipos de poleas:
 #### Sistema por Banda entre dos Poleas
 ![Relación Transmisión Polea](/Imagenes/relacionTransmisionPolea.png)
 
-+ Una Polea impulsora *Izquierda* de radio $r_ip$ y velocidad angular $\omega_ip$
-+ Una polea impulsada *Derecha* de radio $r_lp$ y velocidad angular de $\omega_lp$
++ Una Polea impulsora *Izquierda* de radio $r_{ip}$ y velocidad angular $\omega_{ip}$
++ Una polea impulsada *Derecha* de radio $r_{lp}$ y velocidad angular de $\omega_{lp}$
 
 #### Velocidad Tangencial
 
 Ambas estan unidad por una banda, por lo tanto, la ***velocidad tangencial*** en el punto de contacto debe ser la misma:
 
-$V_tangencial = \omega_ip * r_ip = \omega_lp * r_lp$
+$V_{tangencial} = \omega_{ip} * r_{ip} = \omega_{lp} * r_{lp}$
 
 #### Relación de Transmisión
 
 A partir de la igualdad de velocidades tangenciales, se obtiene la ***relación de transmisión del sistema por banda (NBP):
 
-$NBP = \frac{\omega_ip}{\omega_lp} = \frac{r_lp}{r_ip}$
+$NBP = \frac{\omega_{ip}}{\omega_{lp}} = \frac{r_{lp}}{r_{ip}}$
 
 La relación entre las velocidades angulares es **inversa** al radio de las poleas. Es decir, si la polea impulsora es mas pequeña que la impulsada, esta última girará mas lento.
 
@@ -124,7 +124,7 @@ La relación entre las velocidades angulares es **inversa** al radio de las pole
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$J_r = J_load * N_GB^2 donde NGB = \frac{r_carga}{r_motor}$
+$J_r = J_{load} * N_{GB}^2  donde NGB  = \frac{r_{carga}}{r_{motor}}$
 
 ### Transmisión por Cadenas
 
@@ -149,14 +149,14 @@ Está definido por dos parámetros:
 
 #### Relación de transmisión:
 
-$\frac{d\theta}{dx} = 2\pip y \frac{\.{\theta}}{x} = 2\pip$
+$\frac{d\theta}{dx} = 2\pi p y \frac{\.{\theta}}{x} = 2\pi p$
 
 Donde $p$ es el paso del tornillo.
 
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$J_r = m * (2\pip)^2 con p = pitch(revs/m)$
+$J_r = m * (2\pi p)^2 con p = pitch(revs/m)$
 
 También puede incluir la inercia del tornillo mismo si tiene masa significativa.
 
@@ -192,7 +192,7 @@ $x = r_b * \theta_b -> \.{x} = r_b * \theta_b * \omega_b$
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$J_r = m * r_b^2 donde r_b = radio del tambor/rodillo$
+$J_r = m * r_b^2  donde  r_b = radio  del  tambor/rodillo$
 
 ### Conclusión
 
