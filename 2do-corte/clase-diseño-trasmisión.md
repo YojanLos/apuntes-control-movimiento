@@ -51,4 +51,4 @@ La relacion de transmisión $N_GB$ en un sistema de engranes compara la velociod
 
 Ambos engranes están en contacto, por lo tanto comparten la ***misma velocidad tangencial***:
 
-$V_tangencial = \omega_m * r_m = \omega
+$V_tangencial = \omega_m * r_m = \omega$
