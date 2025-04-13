@@ -108,7 +108,7 @@ $V_{tangencial} = \omega_{ip} * r_{ip} = \omega_{lp} * r_{lp}$
 
 #### Relación de Transmisión
 
-A partir de la igualdad de velocidades tangenciales, se obtiene la ***relación de transmisión del sistema por banda (NBP):
+A partir de la igualdad de velocidades tangenciales, se obtiene la **relación de transmisión del sistema por banda (NBP):**
 
 $NBP = \frac{\omega_{ip}}{\omega_{lp}} = \frac{r_{lp}}{r_{ip}}$
 
@@ -144,12 +144,12 @@ Este mecanismo convierte el **movimiento rotacional en lineal**.
 Convierte **torque** del motor en fuerza sobre la carga
 
 Está definido por dos parámetros:
-+ Pitch *Cabeceo*: Revoluciones necesarias para mover 1 metro.
-+ Lead *Paso*: Desplazamiento lineal por revolución.
++ **Pitch** *Cabeceo*: Revoluciones necesarias para mover 1 metro.
++ **Lead** *Paso*: Desplazamiento lineal por revolución.
 
 #### Relación de transmisión:
 
-$\frac{d\theta}{dx} = 2\pi p \quad y \quad \frac{\.{\theta}}{x} = 2\pi p$
+$\frac{d\theta}{dx} = 2\pi p \quad y \quad \frac{\dot{{\theta}}}{x} = 2\pi p$
 
 Donde $p$ es el paso del tornillo.
 
@@ -165,7 +165,7 @@ También puede incluir la inercia del tornillo mismo si tiene masa significativa
 Sistema que convierte en ***traslación lineal*** mediante el acoplamiento de un engranaje *piñon* con una barra dentada *cremallera*
 
 #### Transmisión 
-$x = r_p * \theta_p \Longrightarrow \.{x} = r_p * \omega_p$
+$x = r_p * \theta_p \Longrightarrow \dot{x} = r_p * \omega_p$
 
 Donde:
 + **$x:$** Desplazamiento lineal
@@ -186,13 +186,13 @@ $J_r = m * r_p^2 \quad donde \quad r_p = radio \quad del \quad piñón$
 Sistema para mover objetos mediante una banda sin fin conectada a un motor.
 
 + Movimiento lineal controlado por el rodillo conductor:
-$x = r_b * \theta_b \Longrightarrow \.{x} = r_b * \theta_b * \omega_b$
+$x = r_b * \theta_b \Longrightarrow \dot{x} = r_b * \theta_b * \omega_b$
 + A menudo modelado igual que una **polea**, pero se considera la carga distribuida *peso* sobre la banda como parte de la inercia.
 
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$J_r = m * r_b^2  \quad donde \quad  r_b = radio  del  tambor/rodillo$
+$J_r = m * r_b^2  \quad donde \quad  r_b = radio \quad del \quad tambor/rodillo$
 
 ### Conclusión
 
