@@ -45,7 +45,7 @@ Para analizar el perfil trapezoidal se utilizan fórmulas integrales que permite
 Se hizo el calculo un Perfil ***Curva en S*** a partir de los datos obtenidos en un efector final de un yugo escocés, los resultados obtenidos en 5 segundos fueron:
 
 ### Ejemplo Curva en S
-![Ejemplo Curva en S](Imagenes/ejemploCurvaS.png)
+![Ejemplo Curva en S](/Imagenes/ejemploCurvaS.png)
 
 El movimiento empieza con una aceleración baja, luego acelera más rápido en la parte media, y finalmente desacelera suavemente al llegar a su destino.
 
