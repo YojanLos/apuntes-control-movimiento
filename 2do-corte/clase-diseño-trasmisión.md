@@ -25,3 +25,30 @@ Los elementos de transmisión son componentes escenciales en sistemas mecánicos
 ## Inercia y Torque reflejado 
 + Inercia **J** se define como la propiedad de un objeto de resistirse a cambios en su velocidad angular.
 + Por leyes de Newton  su comportamiento es $\sum T= J\alpha$
++ Por leyes de newton es posible concluir que la inercia es la contraparte rotacional de la masa.
++ El control de movimiento se acostumbra a denominar inercia para cualquier caso, rotacional o translación.
+
+## Conceptos de transmisión ***Engranajes***
+
+Los engranajes son fundamentales cuando se requiere precisión y control. Se clasifican según la orientación de sus dientes y el tipo de movimiento que transmiten:
++ Cilíndros rectos: Ejes paralelos.
++ Helicoidales: Transmisión más suave.
++ Cónicos: ejes que se cortan.
++ Hipoide: Para grandes reducciones de velocidad.
+
+### Cálculo de Engranajes
+
+![Relación de Engranes](/Imagenes/relacionEngranes.png)
+
+#### Relación de transmisión
+
+La relacion de transmisión $N_GB$ en un sistema de engranes compara la velociodad del motor con la velocidad de la carga:
+
++ $\omega_m$: Velocidad angular del motor
++ $\omega_l$: Velocidad angular de la carga
+
+#### Velocidad Tangencial
+
+Ambos engranes están en contacto, por lo tanto comparten la ***misma velocidad tangencial***:
+
+$V_tangencial = \omega_m * r_m = \omega
