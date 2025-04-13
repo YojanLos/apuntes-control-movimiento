@@ -62,3 +62,11 @@ El sistema se desplaza 10 cm en 5 segundos.
 
  El diseño y análisis de perfiles de movimiento es una herramienta escencial en el campo del control de movimiento. Permite garantizar trayectorias eficientes, suaves y seguras, tanto para movimientos simpes como complejos y multi-eje. El conocimiento de la cinemámtica es clave para el desarrollo de soluciones efectivas.
  
+
+ ## Bibliografía
+
+ + Georgia State University. (s.f.). Movimiento con aceleración constante. HyperPhysics. 
+ http://hyperphysics.phy-astr.gsu.edu/hbasees/acons.html
+
+ + Cote, J. E. (2024). CONTROL DE
+MOVIMIENTO [Presentación]. Electiva de profundización 2 Control de Movimiento, Universidad ECCI.
