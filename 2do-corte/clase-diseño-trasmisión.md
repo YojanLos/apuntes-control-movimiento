@@ -199,3 +199,12 @@ $J_r = m * r_b^2  \quad donde \quad  r_b = radio \quad del \quad tambor/rodillo$
 Los sistemas de transmisión como **engranajes, poleas, tornillos, guía, piñón-cremallera** y **bandas transportadoras** permiten adaptar el movimiento del motor a las necesidades mecánicas de una carga.
 
 Además del tipo de movimiento *rotacional o lineal*, se debe considerar la **inercia reflejada**, ya que esta afecta directamente el **demanda de torque del motor** y su **respuesta dinámica**. Un diseño mal dimensionado puede provocar sobrecalentamiento, vibraciones o errores de posicionamiento.
+
+
+### Bibliografía
+
++ Eonsi. (s.f.). Tipos de engranajes y sus características. Eonsi. https://eonsi.eu/tipos-engranajes/
+
++ Macaplast. (s.f.). Características de las poleas de hierro. https://www.macaplast.com/caracteristicas-las-poleas-hierro/
+
++ Cote, J. E. (2024). Diseño de transmisión [Presentación]. Electiva de profundización 2 Control de Movimiento, Universidad ECCI.
