@@ -81,7 +81,7 @@ $N_{GB} = \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m} = \frac{n_l}{n_m} = \frac{
 
 La incercia reflejada es la cantidad de inercia que se le suma al motor debido a los componentes mecánicos conectados a él.
 
-$J_r = J_{load} * N_{GB}^2 \, donde \, NGB = \frac{\omega_m}{\omega_l}$
+$J_r = J_{load} * N_{GB}^2 \quad donde \quad NGB = \frac{\omega_m}{\omega_l}$
 
 ### Transmision Por Polea-Correas
 
