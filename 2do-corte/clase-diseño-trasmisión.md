@@ -51,17 +51,17 @@ La relacion de transmisión $N_{GB}$ en un sistema de engranes compara la veloci
 
 Ambos engranes están en contacto, por lo tanto comparten la ***misma velocidad tangencial***:
 
-$V_{tangencial} = \omega_m * r_m = \omega_l * r_l -> \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m}$
+$V_{tangencial} = \omega_m * r_m = \omega_l * r_l \Longrightarrow \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m}$
 
 También puede expresarse en términos de número de dientes:
 
-$\frac{n_l}{n_m} = \frac{r_l}{r_m} -> N_{GB} = \frac{n_l}{n_m}$
+$\frac{n_l}{n_m} = \frac{r_l}{r_m} \Longrightarrow N_{GB} = \frac{n_l}{n_m}$
 
 #### Torque
 
 Se utiliza la fórmula de potencia mecánica:
 
-$P = T_m * \omega_m = T_l * \omega_l -> \frac{\omega_m}{\omega_l} = \frac{T_l}{T_m}$
+$P = T_m * \omega_m = T_l * \omega_l \Longrightarrow \frac{\omega_m}{\omega_l} = \frac{T_l}{T_m}$
 
 #### En conclusión
 
@@ -165,7 +165,7 @@ También puede incluir la inercia del tornillo mismo si tiene masa significativa
 Sistema que convierte en ***traslación lineal*** mediante el acoplamiento de un engranaje *piñon* con una barra dentada *cremallera*
 
 #### Transmisión 
-$x = r_p * \theta_p -> \.{x} = r_p * \omega_p$
+$x = r_p * \theta_p \Longrightarrow \.{x} = r_p * \omega_p$
 
 Donde:
 + **$x:$** Desplazamiento lineal
@@ -186,7 +186,7 @@ $J_r = m * r_p^2 donde r_p = radio del piñón$
 Sistema para mover objetos mediante una banda sin fin conectada a un motor.
 
 + Movimiento lineal controlado por el rodillo conductor:
-$x = r_b * \theta_b -> \.{x} = r_b * \theta_b * \omega_b$
+$x = r_b * \theta_b \Longrightarrow \.{x} = r_b * \theta_b * \omega_b$
 + A menudo modelado igual que una **polea**, pero se considera la carga distribuida *peso* sobre la banda como parte de la inercia.
 
 
