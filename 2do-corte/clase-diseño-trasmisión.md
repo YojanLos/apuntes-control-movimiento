@@ -51,17 +51,17 @@ La relacion de transmisión $N_GB$ en un sistema de engranes compara la velociod
 
 Ambos engranes están en contacto, por lo tanto comparten la ***misma velocidad tangencial***:
 
-$V_tangencial = \omega_m * r_m = \omega_l * r_l => \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m}$
+$V_tangencial = \omega_m * r_m = \omega_l * r_l -> \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m}$
 
 También puede expresarse en términos de número de dientes:
 
-$\frac{n_l}{n_m} = \frac{r_l}{r_m} => N_GB = \frac{n_l}{n_m}$
+$\frac{n_l}{n_m} = \frac{r_l}{r_m} -> N_GB = \frac{n_l}{n_m}$
 
 #### Torque
 
 Se utiliza la fórmula de potencia mecánica:
 
-$P = T_m * \omega_m = T_l * \omega_l => \frac{\omega_m}{\omega_l} = \frac{T_l}{T_m}$
+$P = T_m * \omega_m = T_l * \omega_l -> \frac{\omega_m}{\omega_l} = \frac{T_l}{T_m}$
 
 #### En conclusión
 
@@ -72,7 +72,7 @@ $N_GB = \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m} = \frac{n_l}{n_m} = \frac{T_
 #### Ejemplo aplicado a SIM SCAPE
 
 ##### Modelamiento en SimScape
-![Simulación SimScape Engranes](/Imagenes/simpscapeEngranes.jpg)
+![Simulación SimScape Engranes](/Imagenes/simscapeEngranes.jpg)
 
 ##### Resultado Simulación SimScape
 ![Resultado Simulación SimScape Engranes](/Imagenes/resultadoEngranes.jpg)
@@ -81,7 +81,7 @@ $N_GB = \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m} = \frac{n_l}{n_m} = \frac{T_
 
 La incercia reflejada es la cantidad de inercia que se le suma al motor debido a los componentes mecánicos conectados a él.
 
-$ J_r = J_load * N_GB^2 donde NGB = \frac{\omega_m}{\omega_l}$
+$J_r = J_load * N_GB^2 donde NGB = \frac{\omega_m}{\omega_l}$
 
 ### Transmision Por Polea-Correas
 
@@ -117,14 +117,14 @@ La relación entre las velocidades angulares es **inversa** al radio de las pole
 #### Ejemplo aplicado en SimScape
 
 ##### Modelamiento en SimScape
-![Simulación SimScape Poleas](/Imagenes/simpscapePoleas.jpg)
+![Simulación SimScape Poleas](/Imagenes/simscapePoleas.jpg)
 
 ##### Resultado Simulación SimScape
 ![Resultado Simulación SimScape Poleas](/Imagenes/resultadoPoleas.jpg)
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$ J_r = J_load * N_GB^2 donde NGB = \frac{r_carga}{r_motor}$
+$J_r = J_load * N_GB^2 donde NGB = \frac{r_carga}{r_motor}$
 
 ### Transmisión por Cadenas
 
@@ -137,7 +137,7 @@ Este mecanismo convierte el **movimiento rotacional en lineal**.
 #### Tipos 
 
 + **Tornillo ACME:** Mayor fricción, eficiencia entre **35% y 85%**
-+ **Tornillo de bolas** *ball screw*: Reduce el backlash *juego mecánico* y fricción, eficiencia alta: **85% a 95%
++ **Tornillo de bolas** *ball screw*: Reduce el backlash *juego mecánico* y fricción, eficiencia alta: **85% a 95%**
 
 #### Conversión de movimiento
 
@@ -149,14 +149,14 @@ Está definido por dos parámetros:
 
 #### Relación de transmisión:
 
-$\frac{d\theta}{dx} = 2\pip y \frac{\.{\theta}}{x} = 2\pip
+$\frac{d\theta}{dx} = 2\pip y \frac{\.{\theta}}{x} = 2\pip$
 
 Donde $p$ es el paso del tornillo.
 
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$ J_r = m * (2\pip)^2 con p = pitch(revs/m)$
+$J_r = m * (2\pip)^2 con p = pitch(revs/m)$
 
 También puede incluir la inercia del tornillo mismo si tiene masa significativa.
 
@@ -165,7 +165,7 @@ También puede incluir la inercia del tornillo mismo si tiene masa significativa
 Sistema que convierte en ***traslación lineal*** mediante el acoplamiento de un engranaje *piñon* con una barra dentada *cremallera*
 
 #### Transmisión 
-$x = r_p * \theta_p => \.{x} = r_p * \omega_p$
+$x = r_p * \theta_p -> \.{x} = r_p * \omega_p$
 
 Donde:
 + **$x:$** Desplazamiento lineal
@@ -179,20 +179,20 @@ Donde:
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$ J_r = m * r_p^2 donde r_p = radio del piñón$
+$J_r = m * r_p^2 donde r_p = radio del piñón$
 
 ### Banda Trasnportadora
 
 Sistema para mover objetos mediante una banda sin fin conectada a un motor.
 
 + Movimiento lineal controlado por el rodillo conductor:
-$x = r_b * \theta_b => \.{x} = r_b * \theta_b * \omega_b$
+$x = r_b * \theta_b -> \.{x} = r_b * \theta_b * \omega_b$
 + A menudo modelado igual que una **polea**, pero se considera la carga distribuida *peso* sobre la banda como parte de la inercia.
 
 
 #### Cálculo de Inercia Reflejada $J_r$
 
-$ J_r = m * r_b^2 donde r_b = radio del tambor/rodillo $
+$J_r = m * r_b^2 donde r_b = radio del tambor/rodillo$
 
 ### Conclusión
 
