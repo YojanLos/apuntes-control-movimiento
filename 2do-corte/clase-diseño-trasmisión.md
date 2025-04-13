@@ -21,3 +21,7 @@ Los elementos de transmisión son componentes escenciales en sistemas mecánicos
 |  2   | Motor y transmisión existentes | Movimiento de carga resultante |
 |  3   | Motor existente, movimiento de carga deseado | Transmisión |
 |  4   | Movimiento de carga deseado, transmisión | Motor |
+
+## Inercia y Torque reflejado 
++ Inercia **J** se define como la propiedad de un objeto de resistirse a cambios en su velocidad angular.
++ Por leyes de Newton  su comportamiento es $\sum T= J\alpha$
