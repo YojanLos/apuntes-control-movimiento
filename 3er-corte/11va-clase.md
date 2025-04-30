@@ -93,7 +93,10 @@ Si llega a ocurrir algún error Quanser recomienda para la protección del motor
 Una posible falla sería cuando hay energía en el motor, pero sin movimiento, puede haberse bloqueado mecánicamente aumentando la corriente y posiblemente causando daños en los elementos.
 
 ~~~
-Nota: Si luego de hacer alguna modificación se genera un mensaje de error puede ser culpa del gemelo digital, se recomienda salir del entorno del motor Quanser y volverlo a abrir.
+Nota: Si luego de hacer alguna modificación se genera 
+un mensaje de error puede ser culpa del gemelo 
+digital, se recomienda salir del entorno del motor 
+Quanser y volverlo a abrir.
 ~~~
 
 ### AERO 2
